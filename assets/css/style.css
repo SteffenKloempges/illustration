@@ -16,20 +16,7 @@ p{
 div{
     width: 20%;
 }
-/* ====Style DarkMode=== */
-.dark-mode{
-    background-color: #000;
-    color: white;
-}
-.dark-mode section:nth-of-type(1){
-    background: url(../img/darkmode-img1.png) right/contain no-repeat;
-}
-.dark-mode section:nth-of-type(2){
-    background: url(../img/darkmode-img2.png) left/contain no-repeat;
-}
-.dark-mode section:nth-of-type(3){
-    background: url(../img/darkmode-img3.png) right/contain no-repeat;
-}
+
 /* ====Style Header==== */
 header div {
     margin: 0;
@@ -122,17 +109,18 @@ main section:nth-of-type(3) div:first-child{
     margin-bottom: 24vh;
 }
 /*====Style Section 4====*/
-main section:nth-of-type(4){
-    /* befüllen */
-}
 main section:nth-of-type(4) p{
     margin: 0 auto;
     margin-bottom: 60px;
     width: 35%;
 }
 main section:nth-of-type(4) img{
-    width: 30%;
     margin-bottom: 150px;
+}
+main section:nth-of-type(4) img:hover{
+    -moz-box-shadow: 0 0 10px rgba(102,102,102, .8);
+    -webkit-box-shadow: 0 0 10px rgba(102,102,102, .8);
+    box-shadow: 0px 0px 10px rgba(102,102,102, .8);
 }
 /*====Style Section 5====*/
 main section:nth-of-type(5){
@@ -145,6 +133,11 @@ main section:nth-of-type(6) img{
     width: 45%;
     padding: 20px;
     margin-bottom: 50px;
+}
+main section:nth-of-type(6) img:hover{
+    -moz-box-shadow: 0 0 10px rgba(102,102,102, .8);
+    -webkit-box-shadow: 0 0 10px rgba(102,102,102, .8);
+    box-shadow: 0px 0px 10px rgba(102,102,102, .8);
 }
 /*====Style Section 7====*/
 main section:nth-of-type(7){
@@ -182,7 +175,7 @@ footer h1{
     margin-top: 20vh;
 }
 footer h3{
-    color: #ccc;
+    color: #202020;
 }
 footer ul{
     margin: 0 auto;
@@ -224,4 +217,51 @@ footer ul li:nth-of-type(4)::before{
     display: inline-block; 
     width: 1em;
     margin-left: -1em;
+}
+/* ====Style DarkMode=== */
+.dark-mode{
+    background-color: #000;
+    color: white;
+    transition: background 1000ms ease, color 1000ms ease;
+}
+.dark-mode p{
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+}
+.dark-mode header div:nth-of-type(1){
+    color:#000;
+    background: #fff;
+}
+.dark-mode header ul li a{
+    color: white;
+}
+.dark-mode section:nth-of-type(1){
+    background: url(../img/darkmode-img1.png) right/contain no-repeat;
+}
+.dark-mode main section:nth-of-type(1) div:first-child div:nth-of-type(1){
+    color: #fff;
+    background: #202020;
+}
+.dark-mode main section:nth-of-type(1) div:first-child div:nth-of-type(2){
+    color: #000;
+    background: #fff;
+}
+.dark-mode section:nth-of-type(2){
+    background: url(../img/darkmode-img2.png) left/contain no-repeat;
+}
+.dark-mode section:nth-of-type(3){
+    background: url(../img/darkmode-img3.png) right/contain no-repeat;
+}
+.dark-mode footer h1{
+    margin-top: 20vh;
+    color: #fff;
+}
+.dark-mode footer h3{
+    color: #fff;
+}
+.dark-mode footer p {
+    color: #202020;
+}
+.dark-mode footer ul li {
+    color: #202020;
 }
